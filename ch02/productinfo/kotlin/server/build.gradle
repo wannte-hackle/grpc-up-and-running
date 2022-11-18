@@ -54,10 +54,10 @@ compileTestKotlin {
 }
 
 protobuf {
-    protoc { artifact = "com.google.protobuf:protoc:${protobuf_version}" }
+    protoc { artifact = "com.google.protobuf:protoc:${protobuf_version}:osx-x86_64" }
     plugins {
         grpc {
-            artifact = "io.grpc:protoc-gen-grpc-java:${grpc_version}"
+            artifact = "io.grpc:protoc-gen-grpc-java:${grpc_version}:osx-x86_64"
         }
         grpckt {
             artifact = "io.grpc:protoc-gen-grpc-kotlin:${grpc_kotlin_version}:jdk7@jar"
